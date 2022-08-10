@@ -13,7 +13,7 @@ All algorithms are purely written in Python. So, if you are using recent release
 + The SUMO (Simulation of Urban MObility) for the transport simulator : <a href= "https://sumo.dlr.de/docs/index.html"> LINK for SUMO </a>
 
 ## 3. Toy network
-A toy network is a simple traffic network all algorithms are concerning. Is is assumed that 4 blocks of residential area surrounded with links consist of two edges for both directions. And, each edge consists of two lanes. Also, two external links are set up for external influx and out flux of traffic flow. With this network, OD counts (i.e. Nr of Vehicle) and traffic flows (i.e. Veh/hr) are assinged for each edge of links.
+A toy network is a simple traffic network all algorithms are concerning. Is is assumed that 4 blocks of residential area surrounded with links consist of two edges for both directions. And, each edge consists of two lanes. Also, two external links are set up for external influx and out flux of traffic flow. With this network, OD counts (i.e. Nr of Vehicle) and traffic flows (i.e. Veh/hr) are assinged for each edge of links. IMPORTANT: All edges in the network are also nodes in the GNN as actual traffic assignment is conducted on each edge.
 
 ## 4. For those who are intersted in SPSA
 If you wan to see how the SPSA is working on approximating the true OD matrix, you can directly go to a python file "spsa_operation.py" and excute it. All parameters and reporting configurations are already set for an example case using pretrained GNN model. However, you might play with all prameters as your demands such as using the SUMO rather than the GNN, storing historical OD-flow data and adjusting iteration numbers. Keep in mind that using the SUMO will require a lot of time to excute a whole process.
