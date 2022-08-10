@@ -20,10 +20,10 @@ A toy network is a simple traffic network all algorithms are concerning. Is is a
 ## 4. For those who are intersted in SPSA
 If you wan to see how the SPSA is working on approximating the true OD matrix, you can directly go to a python file "spsa_operation.py" and excute it. All parameters and reporting configurations are already set for an example case using pretrained GNN model. However, you might play with all prameters as your demands such as using the SUMO rather than the GNN, storing historical OD-flow data and adjusting iteration numbers. Keep in mind that using the SUMO will require a lot of time to excute a whole process.
 
-## 5. For those who are intersted in FDSA.
+## 5. For those who are intersted in FDSA
 As FDSA requires a lot of perturbation for gradient estimation, this algorithm only untilzes the GNN model instead of the SUMO. You can go to a notebook "fdsa.ipynb" and play a whole process. But, pre-defined parameters are not optimized and results are generally poor at this moment. 
 
-## 6. For those who are intersted in PC-SPSA. 
+## 6. For those who are intersted in PC-SPSA
 This algorithm is in development and only uses the SUMO for objective evaluation steps. So, a lot of time required for execution. However, you might see how it works after tweaking some parameters (e.g. iteration numbers). Notably, the PCA (Principal Components Analysis) is applied to reduce dimension of the OD matrix during approximation. For your trial, please follow these steps.
 + Go to a notebook "biased_OD_gen.ipynb" and execute it so that historical biased OD matrices can be populated. Currently, a total 100 matrices will be created and stored.
 + After having historical biased OD matrices, you can go to a notebook "pca_spsa.ipynb" and excute it. It will build PCA transformation object before approximation begins.
