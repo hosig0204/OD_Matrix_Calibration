@@ -15,7 +15,7 @@ All algorithms are purely written in Python. So, if you are using recent release
 ## 3. Toy network
 A toy network is a simple traffic network all algorithms are concerning. Is is assumed that 4 blocks of residential area surrounded with links consist of two edges for both directions. And, each edge consists of two lanes. Also, two external links are set up for external influx and out flux of traffic flow. With this network, OD counts (i.e. Nr of Vehicle) and traffic flows (i.e. Veh/hr) are assinged for each edge of links. IMPORTANT: All edges in the network are also nodes in the GNN as actual traffic assignment is conducted on each edge.</br>
 
-<p align="center"><img src="https://github.com/hosig0204/OD_Matrix_Calibration/blob/master/static/images/toyNetworkODMatrix.jpg" width="800"></p>
+<p align="center"><img src="https://github.com/hosig0204/OD_Matrix_Calibration/blob/7da13d627261392d2828485f8cdc9d48caf39b53/static/images/toyNetworkODMatrix.jpg" width="800"></p>
 
 ## 4. For those who are intersted in SPSA
 If you wan to see how the SPSA is working on approximating the true OD matrix, you can directly go to a python file "spsa_operation.py" and excute it. All parameters and reporting configurations are already set for an example case using pretrained GNN model. However, you might play with all prameters as your demands such as using the SUMO rather than the GNN, storing historical OD-flow data and adjusting iteration numbers. Keep in mind that using the SUMO will require a lot of time to excute a whole process.
